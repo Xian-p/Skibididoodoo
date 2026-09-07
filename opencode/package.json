@@ -1,0 +1,39 @@
+{
+  "name": "opencode",
+  "version": "1.0.0",
+  "description": "Autonomous coding agent CLI for Termux / Node.js using free models via OpenRouter",
+  "license": "MIT",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "bin": {
+    "opencode": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "examples",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "watch": "tsc -w -p tsconfig.json",
+    "start": "node dist/index.js",
+    "test": "node --test dist/test/",
+    "dev": "node --enable-source-maps dist/index.js"
+  },
+  "keywords": [
+    "agent",
+    "coding-agent",
+    "cli",
+    "openrouter",
+    "termux",
+    "llm"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.4"
+  }
+}
