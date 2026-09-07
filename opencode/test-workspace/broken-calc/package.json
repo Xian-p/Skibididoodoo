@@ -1,0 +1,10 @@
+{
+  "name": "broken-calc",
+  "version": "1.0.0",
+  "description": "A small intentionally broken calculator used to demonstrate the opencode autonomous agent.",
+  "main": "calc.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "license": "MIT"
+}
