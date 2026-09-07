@@ -1,0 +1,10 @@
+{
+  "comment": "Place at .opencode/config.json in a project to scope settings to that repo only. Merge rules: defaults < ~/.config/opencode/config.json < .opencode/config.json < CLI/env.",
+  "model": "deepseek/deepseek-chat:free",
+  "testCommand": "npm test",
+  "buildCommand": "npm run build",
+  "permissionMode": "ask",
+  "dangerousMode": "ask",
+  "maxIterations": 30,
+  "autoCompact": true
+}
