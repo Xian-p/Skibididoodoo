@@ -1,0 +1,57 @@
+{
+  "comment": "Place at ~/.config/opencode/config.json (or merge into it). All keys optional.",
+  "model": "deepseek/deepseek-chat-v3:free",
+  "fallbackModels": [
+    "meta-llama/llama-3.3-70b-instruct:free",
+    "qwen/qwen-2.5-72b-instruct:free"
+  ],
+  "baseUrl": "https://openrouter.ai/api/v1",
+  "toolProtocol": "native",
+  "maxIterations": 25,
+  "commandTimeoutSec": 120,
+  "requestTimeoutSec": 120,
+  "permissionMode": "ask",
+  "dangerousMode": "ask",
+  "autoCompact": true,
+  "contextLimitTokens": 60000,
+  "testCommand": "",
+  "buildCommand": "",
+  "toolResultLimitChars": 6000,
+  "allowCommands": [
+    "git status",
+    "git diff",
+    "git log",
+    "ls",
+    "cat",
+    "node --version"
+  ],
+  "denyCommands": [
+    "*git reset --hard*",
+    "*rm -rf /*",
+    "*mkfs*",
+    "*fdisk*",
+    "*dd if=*"
+  ],
+  "excludedDirs": [
+    "node_modules",
+    ".git",
+    "dist",
+    "build",
+    ".next",
+    ".cache",
+    ".opencode",
+    "coverage",
+    "target",
+    "out",
+    ".venv",
+    "venv",
+    "__pycache__",
+    ".tox",
+    ".mypy_cache",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".svelte-kit",
+    ".turbo",
+    ".vite"
+  ]
+}
