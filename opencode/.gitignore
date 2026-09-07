@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.opencode/sessions/
+.opencode/undo/
+.opencode/session*.json
+*.log
+.DS_Store
